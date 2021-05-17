@@ -71,6 +71,6 @@ The diagram of the overall power system is shown below. This has extra details s
 The _arduino\_controller_ folder contains our simplified Arduino code. 
 This should provide a helpful starting point if you want to use an Arduino for controlling it.
 
-The scripts folder has our laptop-side of the USB serial communication.
+The scripts folder has our laptop-side of the USB serial communication and a basic keyboard operation script.
 
 
