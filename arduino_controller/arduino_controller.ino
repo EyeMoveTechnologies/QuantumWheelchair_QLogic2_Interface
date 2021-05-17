@@ -38,7 +38,7 @@ typedef enum {
   NUM_STATES,
 } state;
 
-// GPIO Pings
+// GPIO Pins
 PIN wakeUpPin = 12;
 PIN ledPin = 13;
 
@@ -87,6 +87,8 @@ void setup()
   pinMode(11, OUTPUT);
   pinMode(ledPin, OUTPUT);
   pinMode(wakeUpPin, INPUT);
+
+  // Speed up to be about 65kHz (I think? I forget exactly. Based it off here https://www.arduino.cc/en/Tutorial/SecretsOfArduinoPWM)
   TCCR2A = _BV(COM2A1) | _BV(COM2B1) | _BV(WGM21) | _BV(WGM20);
   TCCR2B = _BV(CS20);
   set_neutral();
@@ -108,6 +110,7 @@ void loop()
   }
 
   wakeup = digitalRead(wakeUpPin);
+  // Wheelchair is off, arduino should not output anything
   if (wakeup == LOW) {
     cur_state = OFF;
   }
