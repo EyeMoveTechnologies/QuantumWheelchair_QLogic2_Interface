@@ -1,13 +1,11 @@
-# EyeMove_Tung_Shared
-For sharing information with University of Waterloo about interfacing with the Quantum Wheelchair
-
+# Wheelchair Used 
 Model: Quantum Q6 Edge HD Powered Wheelchair
 
 Interface Version: QLogic 2 Interface
 
 Newer wheelchairs will have QLogic 3. Qlogic 2 is out of date, but cheap on used market.
 
-## Documentation Summary
+# Documentation Summary
 
 The _documentation_ folder contains the documents given to us by our Quantum contact.
 The Q_Logic_Technical_Manual is for QLogic 2, which matches the wheelchair.
@@ -43,7 +41,7 @@ Thus, to use your own joystick the wheelchair must be turned on from the Enhance
 This can be done with the green button, or using the 3.5mm egg switch plugged into the ON/OFF port as denoted in the documentation.
 
 
-## Hardware
+# Hardware
 
 The high-level design of the interface is shown below:
 
@@ -64,13 +62,16 @@ The signal processing circuit is shown below:
 The diagram of the overall power system is shown below. This has extra details specific to our project, but I added it in case it is helpful.
 ![Main Electrical](main_electrical.png)
 
-
-
-## Code
+# Code
 
 The _arduino\_controller_ folder contains our simplified Arduino code. 
 This should provide a helpful starting point if you want to use an Arduino for controlling it.
 
 The scripts folder has our laptop-side of the USB serial communication and a basic keyboard operation script.
 
+# Contact
+
+If you have any questions feel free to contact me
+
+Arjun Narayan: arjunmnarayan@gmail.com
 
